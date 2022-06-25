@@ -127,7 +127,7 @@ namespace tp10
                         using (StreamReader objReader = new StreamReader(strReader))
                         {
                             string responseBody = objReader.ReadToEnd();
-                            var ListaDeUnidades = JsonSerializer.Deserialize<Root>(responseBody);
+                            Root ListaDeUnidades = JsonSerializer.Deserialize<Root>(responseBody);
                             return ListaDeUnidades.units;
                         }
                     }
@@ -135,7 +135,6 @@ namespace tp10
             }
             catch (System.Exception)
             {
-                
                 throw;
             }
         }

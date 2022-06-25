@@ -11,20 +11,6 @@ namespace tp10
         public int Stone { get; set; }
         public int Gold { get; set; }
     }
-
-    public class Provides
-    {
-        public int Food { get; set; }
-
-        [JsonPropertyName("Resource Decay")]
-        public double ResourceDecay { get; set; }
-    }
-
-    public class Root
-    {
-        public List<Unit> units { get; set; }
-    }
-
     public class Unit
     {
         public int id { get; set; }
@@ -48,5 +34,9 @@ namespace tp10
         public int search_radius { get; set; }
         public string accuracy { get; set; }
         public int blast_radius { get; set; }
+    }
+    public class Root
+    {
+        public List<Unit> units { get; set; }
     }
 }
