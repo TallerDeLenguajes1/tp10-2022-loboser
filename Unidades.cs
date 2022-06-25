@@ -37,6 +37,7 @@ namespace tp10
     }
     public class Root
     {
+        [JsonPropertyName("units")]
         public List<Unit> units { get; set; }
     }
 }
