@@ -32,7 +32,7 @@ namespace tp10
                 Console.Write("\n\nId de la unidad que desea mostrar completa: ");
                 idSeleccionado = Convert.ToInt32(Console.ReadLine());
 
-                if (idSeleccionado<0 || idSeleccionado>maximo)
+                if (idSeleccionado<1 || idSeleccionado>maximo)
                 {
                     Console.WriteLine("\nId Inexistente ENTER para volver a ingresaar uno...");
                     Console.ReadLine();
@@ -94,7 +94,7 @@ namespace tp10
                         }
                     }
 
-                    if (unidad.search_radius!=0)
+                    if (unidad.search_radius!=null)
                     {
                         Console.WriteLine("Radio de Busqueda: " + unidad.search_radius);
                     }
@@ -102,7 +102,7 @@ namespace tp10
                     {
                         Console.WriteLine("Precision: " + unidad.accuracy);
                     }
-                    if (unidad.blast_radius!=0)
+                    if (unidad.blast_radius!=null)
                     {
                         Console.WriteLine("Radio de Explosion: " + unidad.blast_radius);
                     }
